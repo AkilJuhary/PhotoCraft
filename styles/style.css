@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color:#CD853F;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+}
+
+header img {
+    padding: 8px 25px;
+}
+
+.brand-img {
+
+}
+
+header ul {
+    list-style:none;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+}
+
+header li {
+    padding: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color:#FFEBCD;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    color: 	#8B4513;
+    transition: ease-in-out 0.3s;
+}
+
+.menu-icon {
+    justify-self: center;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        display: block;
+    }
+    nav ul {
+        display:block;
+        position: absolute;
+        width:100%;
+        top:80px;
+        background-color: #717c6e;
+        display:none;
+    }
+
+    nav li {
+        margin: 6px 0;
+        text-align: center;
+    }
+
+    nav li a {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .menu-icon {
+        visibility: visible;
+    }
+
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #fafad2;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.column {
+    background-color:#f0e68c;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20 50pxpx;
+    box-shadow: 5px 8px 9px rgba(192, 192, 195, 0.5);
+}
+
+
+.img-contain {
+    border-radius: 20px;
+    max-width: 300px;
+    box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: 0.9s;
+}
+
+.details {
+   text-align: center;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.img-btn {
+    width: 150px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: none;
+    background-color: #2e8b57;
+    color: #ececec;
+    text-transform: uppercase;
+    font-size: 0.80em;
+    font-weight: 600;
+}
+
+.img-btn:hover {
+    color: #1B2A35;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.img-des {
+    padding: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.img-price {
+    font-weight: 600;
+    color: #800000;
+    font-size: 1.3em;
+    padding: 5px 0;
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        flex-flow: column;
+    }
+
+}
+
