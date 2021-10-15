@@ -6,10 +6,11 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header {
-    background-color:#CD853F;
+    background-color:#189AB4;
     width: auto;
 }
 
@@ -49,7 +50,7 @@ nav li a {
 }
 
 nav a:hover {
-    color: 	#8B4513;
+    color:#60A3D9;
     transition: ease-in-out 0.3s;
 }
 
@@ -67,7 +68,7 @@ nav a:hover {
         display:block;
         position: absolute;
         width:100%;
-        top:80px;
+        top:72px;
         background-color: #717c6e;
         display:none;
     }
@@ -92,13 +93,13 @@ nav a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background-color: #fafad2;
+    background-color:#E5E7E9 ;
     padding: 0 10px;
     width: 100%;
 }
 
 .column {
-    background-color:#f0e68c;
+    background-color:#D6EAF8;
     margin: 20px;
     padding: 20px;
     border-radius: 20 50pxpx;
@@ -161,4 +162,38 @@ nav a:hover {
     }
 
 }
+
+.sign-up {
+    background-color: #16A085;
+    box-shadow:5px -3px 2px #16A085;
+}
+
+.section2 {
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section2 p {
+   color: #fafad2;
+   font-family: 'Roboto', sans-serif;
+   padding: 0 50px;
+}
+
+.sec-p1{
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 16px;
+}
+.sec-p2{}
+.email {
+    border: none;
+    padding: 8px 12px;
+}
+
+
 
